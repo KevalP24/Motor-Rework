@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor Rework - Login/Sign Up</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="128" height="63" alt="motor rework home">
+      </a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">Services</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">Projects</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="btn btn-primary">
+        <span class="span">Log In / Sign Up</span>
+      </a>
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="nav-toggle-icon icon-1"></span>
+        <span class="nav-toggle-icon icon-2"></span>
+        <span class="nav-toggle-icon icon-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <div class="container full-height-container">
+        <div class="form-container">
+          <input type="radio" name="tab" id="login-tab" checked class="radio">
+          <input type="radio" name="tab" id="signup-tab" class="radio">
+          <div class="tabs">
+            <label for="login-tab" class="tab">Login</label>
+            <label for="signup-tab" class="tab">Sign Up</label>
+          </div>
+          <div class="form-content">
+            <form id="login-form" class="form">
+              <h2 class="form-title">Login</h2>
+              <div class="form-group">
+                <label for="login-email" class="form-label">Email:</label>
+                <input type="email" id="login-email" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="login-password" class="form-label">Password:</label>
+                <input type="password" id="login-password" class="form-input" required>
+              </div>
+              <button type="submit" class="btn">Login</button>
+            </form>
+
+            <form id="signup-form" class="form">
+              <h2 class="form-title">Sign Up</h2>
+              <div class="form-group">
+                <label for="signup-name" class="form-label">Name:</label>
+                <input type="text" id="signup-name" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="signup-email" class="form-label">Email:</label>
+                <input type="email" id="signup-email" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="signup-password" class="form-label">Password:</label>
+                <input type="password" id="signup-password" class="form-input" required>
+              </div>
+              <button type="submit" class="btn">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/login.js"></script>
+</body>
+
+</html>
