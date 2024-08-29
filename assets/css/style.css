@@ -1260,3 +1260,49 @@ body {
   .footer-top .container { padding-inline-start: 20%; }
 
 }
+.brands-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.brands-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.brands-grid {
+  display: flex; /* Use flexbox for side-by-side layout */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: center; /* Center the items horizontally */
+  max-width: 800px; /* Set a max-width to control the overall width of the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+.brand-item {
+  text-align: center;
+  padding: 10px; /* Increase padding for better spacing */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff; /* Add a white background to match the CarWale style */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  /* Increase width to make the images larger */
+  width: 200px;
+}
+
+.brand-item img {
+  max-width: 100%; /* Allow image to scale up to the full width of the brand-item */
+  max-height: 100%; /* Allow image to scale up to the full height of the brand-item */
+  margin-bottom: 5px; /* Reduce margin to bring text closer to the image */
+}
+
+.brand-item span {
+  font-size: 14px;
+  color: #333;
+}
+
+.brand-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
