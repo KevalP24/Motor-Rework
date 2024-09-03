@@ -1306,3 +1306,111 @@ body {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
 }
+
+/* new */
+.top-cars-container {
+  width: 70%;
+  margin: 0 auto; /* Center the container */
+}
+
+.top-cars {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%; /* Set the container width to 70% */
+  padding: 20px 0;
+  position: relative;
+  margin: 0 auto; /* Center the Swiper container */
+  overflow: hidden; /* Hide overflow to prevent showing partial slides */
+}
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center; /* Center the slide content horizontally */
+  align-items: center; /* Center the slide content vertically */
+  text-align: center;
+  flex-shrink: 0; /* Center the text */
+}
+
+.car-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Add padding to create more space around the content */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.car-item img {
+  max-width: 200px; /* Increase the image size for a more prominent display */
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.car-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.car-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  font-size: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+/* new */
+
+.user-icon {
+  position: relative;
+}
+
+.dropdown-menu {
+  color: #000;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.user-icon:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 5px 0;
+}
+
+
