@@ -1308,9 +1308,10 @@ body {
 }
 
 /* new */
-.top-cars-container {
+.swiper-wrapper-container {
   width: 70%;
-  margin: 0 auto; /* Center the container */
+  margin: 0 auto;
+  overflow: hidden; /* Center the container */
 }
 
 .top-cars {
